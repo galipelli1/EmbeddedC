@@ -10,7 +10,7 @@ int main(void)
 {
 	/* Initialize Peripherals */
 	init_port();
-        Init_readADC();
+        Init_ADC_init();
 	Init_PWM();
 	Init_USART();
 	
