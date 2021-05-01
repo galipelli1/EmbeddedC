@@ -8,8 +8,8 @@
  * @copyright Copyright (c) 2021
  * 
  */
-#ifndef Activity4_H_INCLUDED
-#define Activity4_H_INCLUDED
+#ifndef ACTIVITY4_H_INCLUDED
+#define ACTIVITY4_H_INCLUDED
 #include<avr/io.h>
 /**
  * @brief Inittialize UART serial communication ports
@@ -29,4 +29,4 @@ char UARTread();
  */
 void output(char data);
 
-#endif // Activity4_H_INCLUDED
+#endif // ACTIVITY4_H_INCLUDED
