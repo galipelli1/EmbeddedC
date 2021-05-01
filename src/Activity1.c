@@ -1,4 +1,6 @@
 #include "activity1.h"
+#include <avr/io.h>
+#include<util/delay.h>
 
 /**
  * @brief Function to check whether heater sensing is on or off
@@ -14,12 +16,10 @@ void init_port(void)
 {
 
     DDRB|=(1<<PB0); // SET B0=1 for pressing heater button
-    DDRB|=(1<<PB1); // SET B1=1 if seat is occupied
-    DDRB|=(1<<PB2); // SET B2=1 for heater
-    DDRB|=(1<<PB3); // SET B3=1 for LED
-
     DDRB&=~(1<<PB0); // clear bit
-    PORTD|=(1<<PB0); // SET bit
+    PORTD|=(1<<PB6); // SET bit
+    DDRB&=~(1<<PB7);//clear bit
+    PORTB|=(1<<PB7);//set the bit
 }
 
 //Change the state of the LED Pin according to the value of sensor
@@ -27,18 +27,24 @@ void sensor()
 {
    while(1)
         {
-            if(PORTB|=(1<<PB1))
+           if(!(PINB&(1<<PB7)))
             {
-                if(!(PIND&=(1<<PD0))){
-                    PORTB|=(1<<PB2);
-                }
-                if(PB2){
-                    PORTB|=(1<<PB3);
-                }
+                if(!(PINB&(1<<PB6)))
+                   {
 
+                       PORTB|=(1<<PB0);//Indication that seat and heater both on
+                       _delay_ms(20);
+
+                   }
+                   else
+                    {
+                        PORTB&=~(1<<PB0);
+                       _delay_ms(20);
+                    }
             }
 
-    }
+
+        }
 
     return 0;
    
