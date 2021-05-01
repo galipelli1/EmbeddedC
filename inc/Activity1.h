@@ -9,10 +9,10 @@
  * 
  */
 
-#ifndef INC_H_INCLUDED
-#define INC_H_INCLUDED
+#ifndef ACTIVITY1_H_INCLUDED
+#define ACTIVITY1_H_INCLUDED
 
 void init_port();
 int sensor();
 
-#endif // INC_H_INCLUDED
+#endif // ACTIVITY1_H_INCLUDED
