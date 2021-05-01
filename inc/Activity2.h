@@ -9,7 +9,7 @@
  * 
  */
 #ifndef ACTIVITY2_H_INCLUDED
-#define ACTIVITY_H_INCLUDED
+#define ACTIVITY2_H_INCLUDED
 #define ADC_ENABLE (ADEN)
 
 /**
