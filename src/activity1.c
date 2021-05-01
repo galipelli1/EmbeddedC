@@ -1,8 +1,18 @@
 
 
-#include "activity1.h
+#include "activity1.h"
 
-void peripheral_init(void)
+/**
+ * @brief Function to check whether heater sensing is on or off
+ * 
+ */
+
+/**
+ * @brief Function for port initialization
+ * 
+ */
+
+void init_port(void)
 {
 
     DDRB|=(1<<PB0); // SET B0=1 for pressing heater button
@@ -13,9 +23,9 @@ void peripheral_init(void)
     DDRB&=~(1<<PB0); // clear bit
     PORTD|=(1<<PB0); // SET bit
 }
-//Change the state of the LED Pin according to the value of state
- 
-void Sensor()
+
+//Change the state of the LED Pin according to the value of sensor
+void sensor()
 {
    while(1)
         {
@@ -32,7 +42,7 @@ void Sensor()
 
     }
 
-
+    return 0;
    
 }
 
