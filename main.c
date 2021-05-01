@@ -22,7 +22,7 @@ int main(void)
 	init_port();
         ADC_init();
 	InitPWM();
-	Init_USART();
+	InitUSART();
 	
 while (1)
     {
