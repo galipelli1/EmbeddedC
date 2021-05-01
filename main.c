@@ -20,7 +20,7 @@ int main(void)
 {
 	
 	init_port();
-        Init_ADC_init();
+        ADC_init();
 	Init_PWM();
 	Init_USART();
 	
