@@ -8,8 +8,8 @@
  * @copyright Copyright (c) 2021
  * 
  */
-#ifndef Activity2_H_INCLUDED
-#define Activity2_H_INCLUDED
+#ifndef ACTIVITY2_H_INCLUDED
+#define ACTIVITY_H_INCLUDED
 #define ADC_ENABLE (ADEN)
 
 /**
@@ -26,7 +26,7 @@
 
 void ADC_init();
 uint16_t ReadADC(uint8_t ch);
-#endif // Activity2_H_INCLUDED
+#endif // ACTIVITY2_H_INCLUDED
 
 
 
