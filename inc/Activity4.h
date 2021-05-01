@@ -1,3 +1,13 @@
+/**
+ * @file Activity4.h
+ * @author galipelli1 (you@domain.com)
+ * @brief 
+ * @version 0.1
+ * @date 2021-04-30
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #ifndef Activity4_H_INCLUDED
 #define Activity4_H_INCLUDED
 #include<avr/io.h>
