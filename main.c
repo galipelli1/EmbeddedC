@@ -25,7 +25,7 @@ while (1)
         //Activity-2, 3 & 4
         if (sensor() == 1)
         {
-            var = Read_ADC(val_ADC);           //READS PWM OUTPUT
+            var = ReadADC(val_ADC);           //READS PWM OUTPUT
             temperature = InitPWM(var); //CALCULATES TEMPERATURE VALUE
             displayOUTPUT(temperature);     //DISPLAYS TEMPERATURE OUTPUT
         }
