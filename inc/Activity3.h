@@ -15,7 +15,7 @@
  * @brief Function
  * 
  */
-void PWMset();
-char PWM_Reading(uint16_t temp_value);
+void InitPWM();
+char OutputPWM(uint16_t temp_value);
 
 #endif // Activity3_H_INCLUDED
