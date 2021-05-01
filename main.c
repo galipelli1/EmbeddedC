@@ -2,13 +2,14 @@
 #include "activity2.h"
 #include "activity3.h"
 #include "activity4.h"
+#define val_ADC 0
 
 
 
 int main(void)
 {
 	/* Initialize Peripherals */
-	peripheral_init();
+	init_port();
         Init_readADC();
 	Init_PWM();
 	Init_USART();
