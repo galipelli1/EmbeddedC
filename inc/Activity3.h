@@ -8,8 +8,8 @@
  * @copyright Copyright (c) 2021
  * 
  */
-#ifndef Activity3_H_INCLUDED
-#define Activity3_H_INCLUDED
+#ifndef ACTIVITY3_H_INCLUDED
+#define ACTIVITY3_H_INCLUDED
 
 /**
  * @brief Function
@@ -18,4 +18,4 @@
 void InitPWM();
 char OutputPWM(uint16_t temp_value);
 
-#endif // Activity3_H_INCLUDED
+#endif //ACTIVITY3_H_INCLUDED
