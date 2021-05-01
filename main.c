@@ -21,7 +21,7 @@ int main(void)
 	
 	init_port();
         ADC_init();
-	Init_PWM();
+	InitPWM();
 	Init_USART();
 	
 while (1)
