@@ -27,7 +27,7 @@ while (1)
         {
             var = ReadADC(val_ADC);           //READS PWM OUTPUT
             temperature = InitPWM(var); //CALCULATES TEMPERATURE VALUE
-            displayOUTPUT(temperature);     //DISPLAYS TEMPERATURE OUTPUT
+            output(temperature);     //DISPLAYS TEMPERATURE OUTPUT
         }
     }
     return 0;
