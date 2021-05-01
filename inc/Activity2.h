@@ -1,3 +1,13 @@
+/**
+ * @file Activity2.h
+ * @author galipelli1 (you@domain.com)
+ * @brief 
+ * @version 0.1
+ * @date 2021-04-27
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #ifndef Activity2_H_INCLUDED
 #define Activity2_H_INCLUDED
 #define ADC_ENABLE (ADEN)
