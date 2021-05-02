@@ -22,7 +22,7 @@ int main(void)
 	init_port();
         ADC_init();
 	InitPWM();
-	InitUSART();
+	InitUART(103);
 	
 while (1)
     {
@@ -36,7 +36,7 @@ while (1)
         if (sensor() == 1)
         {
             var = ReadADC(val_ADC);           //reads output of PWM 
-            temperature = InitPWM(var); //calculates temperature output
+            temperature = OutputPWM(var); //calculates temperature output
             output(temperature);     //displays output
         }
     }
