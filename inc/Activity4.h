@@ -12,9 +12,9 @@
 #define ACTIVITY4_H_INCLUDED
 #include<avr/io.h>
 /**
- * @brief Inittialize UART serial communication ports
+ * @brief Initializing UART serial communication ports
  * 
- * @param ubrr 
+ * @param ubrrvalue 
  */
 void InitUART(uint16_t ubrr_value);
 /**
