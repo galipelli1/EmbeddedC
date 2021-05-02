@@ -19,7 +19,7 @@ void ADC_init()
  */
 uint16_t ReadADC(uint8_t ch)
 {
-    init_ADC();
+    ADC_init();
     ADMUX &= 0XF8;
     ch = ch & 0b00000111;
     ADMUX |= ch;
