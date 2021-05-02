@@ -16,7 +16,7 @@
  * 
  * @param ubrr 
  */
-void InitUART(uint16_t br);
+void InitUART(uint16_t ubrr_value);
 /**
  * @brief Read characters from UART port
  * @return char
