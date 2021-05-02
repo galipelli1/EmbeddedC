@@ -23,7 +23,7 @@ void init_port(void)
 }
 
 //Change the state of the LED Pin according to the value of sensor
-void sensor()
+int sensor()
 {
    while(1)
         {
